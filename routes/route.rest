@@ -1,0 +1,27 @@
+GET http://0.0.0.0:3000/url
+
+###
+
+GET http://0.0.0.0:3000/url/64e8d0bb12feb30e861d43fb
+
+###
+
+POST http://0.0.0.0:3000/url
+Content-Type: application/json
+
+{
+    "url": "anantdubey"
+}
+
+###
+
+DELETE  http://0.0.0.0:3000/url/64e8d0bb12feb30e861d43fb
+
+###
+
+PATCH http://0.0.0.0:3000/url/64e8d1f56e4a65d18856f137
+Content-Type: application/json
+
+{
+    "url": "Anant Dubey"
+}
