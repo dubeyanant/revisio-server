@@ -55,6 +55,7 @@ router.delete("/:id", getUrl, async (req, res) => {
   }
 });
 
+// Middleware
 async function getUrl(req, res, next) {
   try {
     url = await Url.findById(req.params.id);

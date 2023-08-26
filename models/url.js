@@ -1,10 +1,15 @@
 const mongoose = require("mongoose");
 
-const urlSchema = new mongoose.Schema({
-  url: {
-    type: String,
-    required: true,
+const urlSchema = new mongoose.Schema(
+  {
+    url: {
+      type: String,
+      required: true,
+    },
   },
-});
+  {
+    versionKey: false,
+  }
+);
 
 module.exports = mongoose.model("Url", urlSchema);
